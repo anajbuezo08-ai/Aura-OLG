@@ -1,0 +1,201 @@
+body {
+    margin:0%;
+    font-family: Arial, sans-serif;
+
+}
+header{
+    background: #0e2d35;
+    color:rgb(246, 6, 170);
+    text-align: center;
+    padding: 20px;
+}
+nav{
+    background: #550b4c;
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin: 15px;
+}
+section{
+    padding: 30px;
+}
+footer{
+    background: #041a1d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.logo{
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+.inicio{
+    text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+.inicio h2{
+    color: #5a004d;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.inicio p{
+    font-size: 20px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.inicio button{
+    background: #ff00aa;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.inicio button:hover{
+    transform: scale(1.05);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#acerca,
+#servicios,
+#contacto{
+   text-align: center;
+    padding: 80px 20px;
+    background: white;
+}
+
+#acerca h2,
+#servicios h2,
+#contacto h2{
+    color: #6b005f;
+    margin-bottom: 20px;
+}
+
+#servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    width: 220px;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 12px;
+    background: white;
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* 🔥 control de imágenes dentro del modal */
+.modal-contenido img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    display: block;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;}
+.modal-contenido {
+    background: white;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh;   /* 🔥 clave */
+    overflow-y: auto;   /* 🔥 permite bajar dentro del modal */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.modal-contenido img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 10px;
+}
+.modal-contenido button {
+    position: sticky;
+    bottom: 0;
+    background: black;
+    color: white;
+    width: 100%;
+}
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+}
